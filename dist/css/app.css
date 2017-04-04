@@ -16,6 +16,31 @@ main {
   display: block;
 }
 
+.players {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.item {
+  width: 50%;
+  height: 40vh;
+}
+
+.icon {
+  max-width: 100%;
+  height: auto;
+}
+
+.player {
+  padding: 10px;
+}
+
+.computer {
+  padding: 10px;
+}
+
 footer {
   text-align: center;
   font-size: 0.8em;
