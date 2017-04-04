@@ -1,0 +1,15 @@
+<!-- Images (and assets) are parsed and loaded from within the public directory -->
+<button ng-click="play.run(0)">ROCK</button>
+<button ng-click="play.run(1)">PAPER</button>
+<button ng-click="play.run(2)">SCISSORS</button>
+<section class="players">
+  <div class="item player">
+    <h2>Player: {{play.scores.player}}</h2>
+    <img class="icon" ng-src="{{play.player.path}}" src="img/combined.png">
+  </div>
+  <div class="item computer">
+    <h2>Computer: {{play.scores.computer}}</h2>
+    <img class="icon" ng-src="{{play.computer.path}}" src="img/combined.png">
+  </div>
+</section>
+<p>{{play.currentState}}</p>
