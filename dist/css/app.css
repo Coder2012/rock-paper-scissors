@@ -1,41 +1,97 @@
 /* styles in src/style directory are applied to the whole page */
+* {
+  box-sizing: border-box; }
+
+html,
 body {
-  background: #0147A7;
-  color: #fff; }
+  height: 100%;
+  margin: 0; }
+
+body {
+  background: #262626;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif; }
 
 a {
   color: #03A9F4; }
 
-main {
-  padding: 1em;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  margin-top: 50px;
-  display: block; }
+.icon {
+  max-width: 100%;
+  height: auto; }
 
-.players {
+.btn {
+  background: none;
+  border: 2px solid gray;
+  color: white;
+  cursor: pointer;
+  padding: 8px 14px; }
+  .btn:hover {
+    background-color: #333; }
+
+.app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  height: 100%; }
+  .app__header {
+    text-align: center; }
+  .app__footer {
+    font-size: 12px;
+    padding: 20px; }
+  .app__header, .app__footer {
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    height: 60px;
+    background-color: #2C2C2C; }
+  .app__main {
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
+    flex: auto;
+    margin-top: 50px;
+    padding: 0 20px;
+    text-align: center; }
+
+.home__list {
+  font-weight: bold;
+  list-style-type: none;
+  margin: 30px 0;
+  padding: 0; }
+
+.home__list-item {
+  margin: 10px 0; }
+
+.home__em {
+  color: #999;
+  font-style: italic;
+  margin-bottom: 40px; }
+
+.play__status {
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: uppercase; }
+
+.play__players {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around; }
 
-.item {
+.play__item {
   width: 50%;
-  height: 40vh; }
+  min-height: 40vh; }
 
-.icon {
-  max-width: 100%;
-  height: auto; }
-
-.player {
+.play__player {
   padding: 10px; }
 
-.computer {
+.play__computer {
   padding: 10px; }
-
-footer {
-  text-align: center;
-  font-size: 0.8em; }
 
 /*# sourceMappingURL=app.css.map*/
