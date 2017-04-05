@@ -2,9 +2,9 @@ export default class PlayController {
   constructor() {
 
     this.data = [
-        { label: 'Rock', value: 0, path: '/img/rock.png'},
-        { label: 'Paper', value: 1, path: '/img/paper.png'},
-        { label: 'Scissors', value: 2, path: '/img/scissors.png'}
+        { label: 'Rock', value: 0, path: 'img/rock.png'},
+        { label: 'Paper', value: 1, path: 'img/paper.png'},
+        { label: 'Scissors', value: 2, path: 'img/scissors.png'}
       ]
 
     this.scores = {player: 0, computer: 0};
