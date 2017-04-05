@@ -4,7 +4,7 @@ import routing from './app.config';
 import home from './home';
 import play from './play';
 
-import '../style/app.css';
+import '../style/app.scss';
 
 let app = () => {
   return {

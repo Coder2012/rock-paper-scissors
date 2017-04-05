@@ -1,0 +1,109 @@
+/* styles in src/style directory are applied to the whole page */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #262626;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: #03A9F4;
+}
+
+.icon {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  background: none;
+  border: 2px solid gray;
+  color: white;
+  cursor: pointer;
+  padding: 8px 14px;
+
+  &:hover {
+    background-color: #333;
+  }
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column nowrap; 
+  height: 100%;
+
+  &__header {
+    text-align: center;
+  }
+
+  &__footer {
+    font-size: 12px;
+    padding: 20px;
+  }
+
+  &__header,
+  &__footer {
+    flex: none;
+    height: 60px;
+    background-color: #2C2C2C;
+  }
+
+  &__main {
+    flex: auto;
+    margin-top: 50px;
+    padding: 0 20px;
+    text-align: center;
+  }
+}
+
+.home {
+  &__list {
+    font-weight: bold;
+    list-style-type: none;
+    margin: 30px 0;
+    padding: 0;
+  }
+  &__list-item {
+    margin: 10px 0;
+  }
+
+  &__em {
+    color: #999;
+    font-style: italic;
+    margin-bottom: 40px;
+  }
+}
+
+.play {
+  &__status {
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+  &__players {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__item {
+    width: 50%;
+    min-height: 40vh;
+  }
+
+  &__player {
+    padding: 10px;
+  }
+
+  &__computer {
+    padding: 10px;
+  }
+}
