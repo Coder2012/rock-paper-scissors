@@ -11,7 +11,7 @@ export default class PlayController {
     this.states = {
       start: 'Ready to go!',
       player: 'Player wins!!!',
-      computer: 'Computer beat you!!',
+      computer: 'Computer wins',
       draw: 'DRAW'
     };
 
