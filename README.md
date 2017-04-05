@@ -8,6 +8,8 @@ This is a small game I built for a technical test, this was built using:
 * SASS
 * Karma
 
+![alt text](https://github.com/Coder2012/rock-paper-scissors/blob/master/screenshots/rpc.png "Rock Paper Scissors screenshot")
+
 ### View the [demo](https://coder2012.github.io/rock-paper-scissors/dist/)
 
 >Warning: Make sure you're using the latest version of Node.js and NPM
